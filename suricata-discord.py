@@ -6,7 +6,6 @@
 import json
 import time
 import requests
-
 WEBHOOK_URL = "Put Your Webhook Url Here"  # Put Your Webhook Url Here
 IP_THRESHOLD = 10  # Do not edit this
 counter = 0 # Do not edit this
