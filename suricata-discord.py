@@ -7,18 +7,18 @@ import json
 import time
 import requests
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1168540546168537098/4qkQKdPpR9SD20aoegqxABFOJ4IXfgYHDhefN-uaH6ccpRxEO7WRGgHd2aRE5E-Cnik3"  # Put Your Webhook Url xd
-IP_THRESHOLD = 10  # Send an alert for each IP every 50 seconds
-counter = 0
-ip_log = {}
-ip_sended = {}
+WEBHOOK_URL = "Put Your Webhook Url Here"  # Put Your Webhook Url Here
+IP_THRESHOLD = 10  # Do not edit this
+counter = 0 # Do not edit this
+ip_log = {} # Do not edit this
+ip_sended = {} # Do not edit this
 
 def send_to_discord(ip_events):
     # Create the Discord message data
     data = {
         "content": f":shield: New Problem Detected",
-        #"username": "Suricata Logs",  # Webhook Name
-        #"avatar_url": "https://imgur.com/5KXvYZo",  # avatar
+        #"username": "Suricata Logs",  # Webhook Name ,disabled because not working
+        #"avatar_url": "https://imgur.com/5KXvYZo",  # avatar,disabled because not working, edit it in the webhook details
         "embeds": []
     }
 
@@ -63,7 +63,7 @@ while True:
                 src_ip = log['src_ip']
 
                 # Check if the destination IP starts with 'Your ip range'
-                if not dest_ip.startswith('192.168.1'):    # Put your ip range xd like this 89.234.12
+                if not dest_ip.startswith('Put your ip range like this 192.168.1. **NOT 192.168.1.0/24**'):
                     continue
 
                 # If this is the first log for this IP, add it to the log dictionary
