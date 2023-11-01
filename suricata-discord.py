@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # By Mody404 made with <3
 # Fixed and adapted by BoomerangBS with <3
-# SCRIPT UNDER 
+# SCRIPT UNDER GNU General Public License v3.0 LICENSE
 import json
 import time
 import requests
