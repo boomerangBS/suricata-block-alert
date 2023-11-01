@@ -63,7 +63,7 @@ while True:
                 src_ip = log['src_ip']
 
                 # Check if the destination IP starts with 'Your ip range'
-                if not dest_ip.startswith('Put your ip range like this 192.168.1. **NOT 192.168.1.0/24**'):
+                if not dest_ip.startswith('Put DESTINATION not source  ip range like this 192.168.1. **NOT 192.168.1.0/24**'):
                     continue
 
                 # If this is the first log for this IP, add it to the log dictionary
