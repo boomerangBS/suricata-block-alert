@@ -9,7 +9,7 @@ Edit `suricata.yaml` (`find / -iname suricata.yaml` to locate the file) and enab
 Restart suricata.
 
 
-## Install files
+## Download and edit files
 
 Create the folder and cd into it `mkdir /etc/suricata-discord && cd /etc/suricata-discord`
 
